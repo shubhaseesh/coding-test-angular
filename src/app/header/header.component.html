@@ -1,0 +1,12 @@
+<form
+ class="form-group" 
+ (ngSubmit)="onSubmit()"
+ [formGroup]="todoForm"
+ *ngIf="todoForm">
+    <input
+        formControlName="todo" 
+        type="text"
+        class="form-control" 
+        placeholder="Type here to add todo"/>
+    <button class="btn btn-primary" type="submit">Add</button>
+</form>
